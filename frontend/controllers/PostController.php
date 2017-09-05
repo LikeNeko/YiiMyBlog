@@ -72,6 +72,8 @@ class PostController extends Controller{
      */
     public function actionIndex()
     {
+        echo 1;
+        echo 2;
         return $this->render('index');
     }
 
