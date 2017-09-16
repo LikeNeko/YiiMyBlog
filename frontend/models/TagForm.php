@@ -6,6 +6,7 @@
  * Time: 上午 8:15:08
  */
 namespace frontend\models;
+use common\models\Tags;
 use yii\base\Model;
 
 class TagForm extends Model{
@@ -43,11 +44,12 @@ class TagForm extends Model{
             if(!$model->save()){
                 throw new \Exception("保存标签失败");
             }
-            return $res->id;
+            return $model->id;
         }else{
             //增加某个字段的值的数目
             $res->updateCounters(['post_num'=>1]);
         }
         return $res->id;
     }
+
 }

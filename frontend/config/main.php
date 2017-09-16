@@ -14,7 +14,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'user' => [
-            'identityClass' => 'frontend\models\User',
+            'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
         ],
         'urlManager'=>[

@@ -1,5 +1,5 @@
 <?php
-namespace common\models;
+namespace backend\models;
 
 use Yii;
 use yii\base\Model;
@@ -24,13 +24,18 @@ class LoginForm extends Model
         return [
             // username and password are both required
             [['username', 'password'], 'required'],
-            // rememberMe must be a boolean value
-            ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
             ['password', 'validatePassword'],
         ];
     }
 
+    public function attributeLabels()
+    {
+        return [
+            'username'=>"账号",
+            'password'=>"密码"
+        ];
+    }
     /**
      * Validates the password.
      * This method serves as the inline validation for password.
@@ -43,7 +48,7 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, '用户名或密码验证失败');
             }
         }
     }

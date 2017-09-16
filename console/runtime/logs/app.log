@@ -1,0 +1,75 @@
+2017-09-05 03:24:08 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:28
+Stack trace:
+#0 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(35): m140506_102106_rbac_init->getAuthManager()
+#1 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(492): m140506_102106_rbac_init->up()
+#2 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(129): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#7 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#8 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#9 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\server\phpstudy\WWW\YiiMyBlog\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\server\phpstudy\WWW\YiiMyBlog\advanced\yii(27): yii\base\Application->run()
+#12 {main}
+2017-09-05 03:24:00 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_SDK_HOME' => 'C:\\Android'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'asl_log' => 'Destination=file'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SUPERCOMPUTER'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SUPERCOMPUTER'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\python27\\Lib\\site-packages\\PyQt4;C:\\Users\\Administrator\\Desktop;E:\\gcc\\mingw64\\bin;E:\\MySQL\\MySQL Server 5.6\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\python\\Scripts;D:\\python;C:\\Program Files (x86)\\Microsoft VS Code\\bin;E:\\工作软件\\Bandizip\\7z;C:\\;indows\\system32\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Windows\\system32\\;C:\\Android;C:\\Windows\\System32;E:\\server\\mysql\\bin;C:\\ProgramData\\Miniconda3;C:\\ProgramData\\Miniconda3\\Scripts;C:\\ProgramData\\Miniconda3\\Library\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.3.5\\;E:\\soft\\svn\\bin;C:\\ProgramData\\Miniconda3\\selenium\\webdriver\\firefox;C:\\ProgramData\\ComposerSetup\\bin;S:\\Git\\cmd;E:\\gcc\\mingw64\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\python\\Scripts;D:\\python;E:\\工作软件\\Bandizip\\7z;E:\\MySQL\\MySQL Server 5.6\\bin;D:\\python\\Scripts;D:\\python;e:\\python27;e:\\python27\\Scripts;C:\\ProgramData\\Miniconda3\\selenium\\webdriver\\firefox;E:\\server\\phpstudy\\php\\php-7.0.12-nts;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Common\\Microsoft\\Visual C++ for Python\\9.0\\VC\\bin\\x86_amd64;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SUPERCOMPUTER'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'VS110COMNTOOLS' => 'E:\\c语言杂货库\\VisualStudio\\Common7\\Tools\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\server\\phpstudy\\WWW\\YiiMyBlog\\advanced\\'
+    'PHP_SELF' => 'E:\\server\\phpstudy\\WWW\\YiiMyBlog\\advanced\\yii'
+    'SCRIPT_NAME' => 'E:\\server\\phpstudy\\WWW\\YiiMyBlog\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'E:\\server\\phpstudy\\WWW\\YiiMyBlog\\advanced\\yii'
+    'PATH_TRANSLATED' => 'E:\\server\\phpstudy\\WWW\\YiiMyBlog\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1504581840.7772
+    'REQUEST_TIME' => 1504581840
+    'argv' => [
+        0 => 'E:\\server\\phpstudy\\WWW\\YiiMyBlog\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]

@@ -25,7 +25,7 @@ class SignupForm extends Model
         return [
             ['username', 'filter', 'filter' => 'trim'],
             ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\frontend\models\User', 'message' => '用户名已存在'],
+            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => '用户名已存在'],
             ['username', 'string', 'min' => 2, 'max' => 30],
             ['username', 'match','pattern'=>'/^[(\x{4E00}-\x{9FA5})a-zA-Z]+[(\x{4E00}-\x{9FA5})a-zA-Z_\d]*$/u','message'=>'用户名由字母，汉字，数字，下划线组成，且不能以数字和下划线开头。'],
 
@@ -33,7 +33,7 @@ class SignupForm extends Model
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 30],
-            ['email', 'unique', 'targetClass' => '\frontend\models\User', 'message' => '这个邮箱已经注册过了.'],
+            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => '这个邮箱已经注册过了.'],
 
             [['password','rePassword'], 'required'],
             [['password','rePassword'], 'string', 'min' => 6],
@@ -63,7 +63,7 @@ class SignupForm extends Model
     public function signup()
     {
         if ($this->validate()) {
-            $user = new User();
+            $user = new \common\models\User();
             $user->username = $this->username;
             $user->email = $this->email;
             $user->setPassword($this->password);

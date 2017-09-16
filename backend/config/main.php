@@ -11,11 +11,17 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    'language'=>"zh-CN",
     'modules' => [],
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+        ],
+        'urlManager'=>[
+            'enablePrettyUrl'=>true,
+            'showScriptName'=>false,
+//            'suffix'=>'.html'
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
